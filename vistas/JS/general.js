@@ -45,6 +45,7 @@ modalInputLogin.addEventListener('click', iniciarSesion);
 const botonLengua = document.querySelector('#language-picker');
 const listaLenguas = document.querySelector('.languages');
 
+if(botonLengua && listaLenguas){
 botonLengua.addEventListener('click', (e) => {
     listaLenguas.classList.toggle('oculto');
 })
@@ -55,6 +56,7 @@ for (const l of lis) {
         botonLengua.querySelector('span').textContent = l.querySelector('span').textContent.substring(0,3);
         listaLenguas.classList.toggle('oculto');
     })
+}
 }
 
 /********************************************* */
