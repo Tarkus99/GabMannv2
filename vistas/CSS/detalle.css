@@ -1,0 +1,203 @@
+body {
+  background-color: #fcf7e4;
+}
+
+header {
+      background: url("../img/back3.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+.header__buscar .form__field:placeholder-shown ~ .form__label {
+  color: white;
+}
+
+.header__buscar .form__field:focus ~ .form__label {
+  opacity: 0;
+}
+
+.nav-parent {
+  background-color: rgba(128, 128, 128, 0.51);
+  border-top: 1px solid wheat;
+}
+
+.path {
+  box-shadow: inset 0px -2px 1px 0px brown;
+  background: var(--mi-rojo);
+  color: white;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 0.6rem;
+}
+
+@media screen and (max-width: 400px){
+  .product-info{
+    width: 100% !important;
+  }
+}
+
+.product-info {
+  border-radius: 3px;
+  background-color: rgb(253, 253, 253);
+  font-family: "Nunito Sans", sans-serif;
+  box-shadow: inset 0px 0px 0 4px #b5bfd9, inset 0px 0px 0px 8px var(--mi-azul);
+  position: relative;
+  width: 75%;
+}
+
+.product-info__img img {
+  width: 70%;
+  height: 70%;
+}
+
+.product-info h4{
+  font-family: 'Dosis', sans-serif;
+}
+
+.product-info small {
+  color: #919191;
+}
+
+.product-info p {
+  border-bottom: 1px solid var(--mi-rojo);
+  font-size: .9rem;
+}
+
+.product-info input {
+  width: 4rem;
+}
+
+.product-info sup {
+  color: #b5b5b5;
+}
+#cantidad_x_precio {
+  color: rgb(104, 104, 104) !important;
+  text-align: center;
+}
+
+#cantidad_x_precio::after {
+  content: "€";
+}
+
+.btnDefault {
+  align-self: flex-end;
+}
+
+.radio-inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 350px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.radio-inputs > * {
+  margin: 6px;
+}
+
+.radio-input:checked + .radio-tile {
+  border-color: var(--mi-azul-darker);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.radio-input:checked + .radio-tile:before {
+  transform: scale(1);
+  opacity: 1;
+  background-color: var(--mi-rojo);
+  border-color: var(--mi-rojo);
+}
+
+.radio-input:checked + .radio-tile .radio-label {
+  color: var(--mi-azul-darker);
+}
+
+.radio-input:focus + .radio-tile {
+  border-color: var(--mi-rojo);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1), 0 0 0 4px #b5c9fc;
+}
+
+.radio-input:focus + .radio-tile:before {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.radio-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  border: 2px solid #b5bfd9;
+  background-color: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.15s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.radio-tile:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0.5rem;
+  height: 0.5rem;
+  border: 2px solid #b5bfd9;
+  border-radius: 50%;
+  top: 0.25rem;
+  left: 0.25rem;
+  opacity: 0;
+  transform: scale(0);
+  transition: 0.25s ease;
+}
+
+.radio-tile:hover {
+  border-color: var(--mi-azul);
+}
+
+.radio-tile:hover:before {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.radio-label {
+  color: #707070;
+  transition: 0.375s ease;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.radio-input {
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.media__title-parent {
+  background: var(--gradient2);
+  color: white;
+  font-family: "Dosis", sans-serif;
+
+  & .media__title-text{
+    border-bottom: 2px solid var(--mi-rojo);
+  }
+}
+
+.media {
+  height: calc(200px + 20vh + 10vw);
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+}

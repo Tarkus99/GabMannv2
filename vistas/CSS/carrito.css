@@ -1,0 +1,166 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background: url("../img/back3\,3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.carrito__back-parent a {
+  width: min-content;
+  color: rgb(255, 153, 0);
+  text-shadow: 0px 0px 5px orange;
+}
+
+.carrito-content {
+  width: 100%;
+}
+
+.form-parent h2 {
+  font-family: "Agbalumo", sans-serif;
+}
+
+@media screen  and (min-width: 600px){
+  .item img {
+  max-width: 72px;
+  max-height: 72px;
+  height: 72px;
+}
+}
+
+@media screen  and (min-width: 940px){
+  .item img {
+  max-width: 96px;
+  max-height: 96px;
+  height: 96px;
+}
+}
+
+@media screen  and (max-width: 599px){
+  .item img {
+    max-width: 60px;
+    max-height: 60px;
+    height: 60px;
+  }
+}
+
+
+
+.product-info__cantidad{
+  width: 2rem !important;
+  font-size: .8rem;
+}
+
+
+.item {
+  font-family: "Nunito Sans", sans-serif;
+  box-shadow: 3px 3px var(--mi-azul), 6px 6px rgb(17, 17, 17),
+    -3px -3px 6px 0px gray;
+}
+
+.item a{
+  height: min-content;
+  width: fit-content;
+}
+
+.item h4 {
+  font-family: "Quicksand", sans-serif;
+  transition: 0.2s;
+ /*  white-space: nowrap; */
+ width: max-content;
+}
+
+.item h4:hover {
+  color: var(--mi-rojo);
+}
+
+.empty-cart {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 900;
+}
+
+.nothing-to-do {
+  width: calc(100px + 10vw) !important;
+  height: calc(100px + 10vw) !important;
+}
+
+.restar,
+.sumar {
+  background-color: #fef3c7;
+}
+
+.delete {
+  cursor: pointer;
+  transition: 0.1s ease-in;
+  font-size: 1rem;
+  border: 1px solid transparent;
+}
+
+@media screen and (min-width:768px) {
+  .delete{
+    order: 2 !important;
+  }
+}
+
+.delete:hover {
+  color: rgb(201, 40, 40);
+  border-color: gray;
+}
+
+/*
+██████  ██  █████  ██       ██████   ██████  
+██   ██ ██ ██   ██ ██      ██    ██ ██       
+██   ██ ██ ███████ ██      ██    ██ ██   ███ 
+██   ██ ██ ██   ██ ██      ██    ██ ██    ██ 
+██████  ██ ██   ██ ███████  ██████   ██████
+*/
+
+dialog {
+  transition: margin 0.3s;
+  background-color: transparent;
+  overflow: hidden;
+  padding: 1rem !important;
+}
+
+dialog::backdrop{
+  background-color: rgba(68, 68, 68, 0.432);
+}
+
+dialog svg{
+  height: calc(1rem + 1vh);
+  width: calc(1rem + 1vh);
+}
+
+dialog .modal-content {
+  background-color: white;
+  width: 100%;
+  position: relative;
+  transition: 0.4s;
+}
+
+dialog .form-detail h2 {
+  font-family: "Agbalumo", sans-serif;
+}
+
+dialog .form-detail input {
+  outline: none;
+}
+
+.open {
+  opacity: 1;
+  top: 0%;
+}
+
+.close {
+  opacity: 0;
+  top: -50% !important;
+}
+
+#info-checkout {
+  display: none;
+  font-family: 'Nunito Sans', sans-serif;
+}

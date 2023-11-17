@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <style>
+            
+            .custom-select{
+                width: min-content;
+                max-width: min-content;
+                font-family: 'Roboto', sans-serif;
+                margin: auto;
+                position: absolute;
+                right: 0;
+                top: 1%;
+            }
+
+            #language-picker{
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                padding: .5rem .7rem;
+                background-color: rgb(255, 251, 232);
+                color: rgb(24, 24, 24);
+                border: none;
+                box-shadow: 1px -1px 0px 0px rgb(255, 255, 255);
+                cursor: pointer;
+                font-size: 1rem;
+                margin-bottom: .5rem;
+                gap: 10px;
+            }
+
+            #language-picker span:nth-child(2){
+                color: teal;
+            }
+
+            .oculto{
+                max-height: 0px !important;
+                padding: 0 !important;
+            }
+
+            .languages{
+                padding: 0;
+                background-color: transparent;
+                transition: .3s;
+                overflow: hidden;
+                max-height: 500px;
+                border-radius: 3px;
+                position: relative;
+                right: 50%;
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                z-index: 0;
+                margin: 0;
+            }
+
+            .languages li{
+                list-style: none;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: .4rem .8rem;
+                flex-basis: 100%;
+                background-color: antiquewhite;
+                border-radius: 3px;
+                cursor: pointer;
+                font-size: .8rem;
+            }
+
+            .languages li img{
+                width: 1.2rem;
+                height: 1.2rem;
+                margin-right: 1rem;
+            }
+        </style>
+</head>
+
+<body>
+    <div class="custom-select">
+        <button id="language-picker">
+            <span>ESP</span>
+            <span class="material-symbols-outlined">
+                expand_more
+            </span>
+        </button>
+        <ul class="languages oculto">
+            <span class="material-symbols-outlined detalle">
+                arrow_drop_up
+            </span>
+            <li><img src="https://cdn-icons-png.flaticon.com/512/323/323329.png" alt=""><span>ENGLISH</span></li>
+            <li><img src="https://cdn-icons-png.flaticon.com/512/323/323365.png" alt=""><span>ESPAÑOL</span></li>
+            <li><img src="https://cdn-icons-png.flaticon.com/512/197/197560.png" alt="" srcset=""><span>FRANCAIS</span></li>
+        </ul>
+    </div>
+
+    <script>
+        const botonLengua = document.querySelector('#language-picker');
+        const listaLenguas = document.querySelector('.languages');
+
+        botonLengua.addEventListener('click', (e)=>{
+            listaLenguas.classList.toggle('oculto');
+        })
+    </script>
+</body>
+
+</html>

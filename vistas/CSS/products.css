@@ -1,0 +1,317 @@
+body {
+  /* background-image: url("../img/back3.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover; */
+  background-color: rgb(251, 246, 227);
+}
+
+header {
+  background-image: url("../img/back3.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 0;
+  /*  background-color: rgb(51, 61, 122); */
+  /*  background: url("../img/texture2.png");
+  background-size: auto;
+  background-repeat: repeat; */
+}
+
+.nav-parent {
+  background-color: rgba(128, 128, 128, 0.51);
+  border-top: 1px solid wheat;
+}
+
+/*
+███████ ██ ██      ████████ ██████   ██████  
+██      ██ ██         ██    ██   ██ ██    ██ 
+█████   ██ ██         ██    ██████  ██    ██ 
+██      ██ ██         ██    ██   ██ ██    ██ 
+██      ██ ███████    ██    ██   ██  ██████ 
+*/
+.filter-icon,
+.main {
+  z-index: 10;
+  position: fixed;
+  top: 40%;
+  left: 0;
+  transition: 0.3s;
+}
+.filter-icon {
+  background: rgb(37, 37, 37);
+  cursor: pointer;
+  font-size: 2.5rem !important;
+  color: whitesmoke;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  z-index: 2;
+}
+
+#openFilter span {
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  #filter {
+    translate: -100%;
+  }
+}
+
+.main {
+  translate: -100%;
+}
+
+#filter .h6 {
+  width: max-content;
+  text-decoration: underline solid wheat;
+}
+
+.main {
+  background: var(--gradient2);
+  width: min-content;
+  padding: 1rem 1rem;
+  /* box-shadow: -2px -2px wheat, -4px -4px var(--mi-azul); */
+  -webkit-box-shadow: -3px -4px 4px 1px #313131;
+  box-shadow: -3px -4px 4px 1px #4b4b4b;
+  font-family: "Raleway", sans-serif;
+  color: whitesmoke;
+  & .h6 {
+    width: max-content;
+  }
+}
+
+.main .btn {
+  border-radius: 5px;
+  font-size: 0.9rem;
+  color: white !important;
+  border-color: aquamarine !important;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+  .open-icon {
+  translate: 0 -100%;
+  border-radius: 0;
+  border-top-right-radius: 5px;
+}
+}
+
+@media screen and (max-width: 767px) {
+
+.filter-icon{
+  top: 90% !important;
+  left: 5% !important;
+  border-radius: 20% !important;
+}
+}
+
+
+
+.open-filter {
+  top: 40%;
+  translate: 0;
+}
+
+/*
+███████  ██████  ██████  ████████ ██ ███    ██  ██████  
+██      ██    ██ ██   ██    ██    ██ ████   ██ ██       
+███████ ██    ██ ██████     ██    ██ ██ ██  ██ ██   ███ 
+     ██ ██    ██ ██   ██    ██    ██ ██  ██ ██ ██    ██ 
+███████  ██████  ██   ██    ██    ██ ██   ████  ██████  
+*/
+
+@media screen and (min-width: 768px) {
+  .info-busqueda {
+    max-width: 70%;
+    overflow-x: scroll;
+    height: min-content;
+    scrollbar-width: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .info-busqueda {
+    width: 100%;
+    overflow-x: scroll;
+    height: min-content;
+    scrollbar-width: none;
+  }
+}
+
+.select-parent {
+  position: relative;
+  width: auto !important;
+}
+
+.select-parent::before,
+.select-parent::after {
+  --size: 0.3rem;
+  position: absolute;
+  content: "";
+  right: 1rem;
+  pointer-events: none;
+  left: 90%;
+}
+
+.select-parent::before {
+  border-left: var(--size) solid transparent;
+  border-right: var(--size) solid transparent;
+  border-bottom: var(--size) solid black;
+  top: 35%;
+}
+
+.select-parent::after {
+  border-left: var(--size) solid transparent;
+  border-right: var(--size) solid transparent;
+  border-top: var(--size) solid black;
+  top: 60%;
+}
+
+select {
+  width: 100%;
+  appearance: none;
+  font-size: 0.8rem;
+  padding: 0 2em 0 1em;
+  background-color: #fff;
+  border: 1px solid #caced1;
+  border-radius: 0.25rem;
+  color: #000;
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+select:focus {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(102, 102, 102);
+}
+
+select:invalid {
+  color: gray;
+}
+
+option {
+  background: rgb(78, 78, 78);
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 0.7rem;
+  border-radius: 0;
+}
+
+/*
+███████ ███████  ██████ ████████ ██  ██████  ███    ██ 
+██      ██      ██         ██    ██ ██    ██ ████   ██ 
+███████ █████   ██         ██    ██ ██    ██ ██ ██  ██ 
+     ██ ██      ██         ██    ██ ██    ██ ██  ██ ██ 
+███████ ███████  ██████    ██    ██  ██████  ██   ████
+*/
+.products-parent {
+  background-color: rgba(240, 248, 255, 0);
+}
+
+.products-parent .products__title-parent {
+  color: white;
+  background: var(--gradient2);
+  font-family: "Dosis", sans-serif;
+}
+
+[class*="__title-text"] {
+  border-bottom: 2px solid orange;
+}
+
+.products__cards-container .col {
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 350px){
+  .card-parent{
+    width: 100% !important;
+  }
+}
+
+.card {
+  height: 100% !important;
+  font-family: "Nunito Sans", sans-serif;
+  background-color: #f1f5f9;
+}
+
+.product-img {
+  height: calc(50px + 8vw + 4vh);
+  max-height: 30vh;
+  width: 50%;
+}
+
+.card-title {
+  flex-grow: 1;
+  color: rgb(24, 24, 24);
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  color: #4b4b4b;
+}
+
+.card .btnDefault {
+  align-self: flex-end;
+}
+
+.truncate {
+  font-size: 0.8rem !important;
+  line-height: 0.9rem !important;
+  -webkit-box-orient: vertical;
+  display: block;
+  display: -webkit-box;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 4;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 576px) {
+  .cards-container {
+    width: 100% !important;
+  }
+}
+
+/* @media screen and (min-width: 400px) {
+  .products__cards-container {
+    padding: 0 10vw !important;
+  }
+}
+.products__cards-container {
+    padding: 0 3vw;
+  } */
+/******************************/
+
+.arrow-pointer {
+  width: max-content;
+  height: auto;
+  background: whitesmoke;
+  position: relative;
+  color: rgb(31, 31, 31);
+  border-radius: 3px;
+  border: 1px solid gray;
+  font-size: 0.8rem;
+  padding: 0.1rem 0.2rem 0.1rem 0.4rem;
+  box-shadow: 0px 0px 1px 1px gray, inset -1px 0px 1px -1px black;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.arrow-pointer span {
+  color: black;
+  cursor: pointer;
+  transition: 0.2s;
+  border-radius: 3px;
+  font-size: 1rem;
+}
+
+.arrow-pointer span:hover {
+  background-color: var(--mi-amarillo);
+}
+
+.arrow-pointer p {
+  z-index: 1;
+  white-space: nowrap;
+}
