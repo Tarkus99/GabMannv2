@@ -521,8 +521,6 @@ footer {
   width: min-content;
   max-width: min-content;
   font-family: 'Roboto', sans-serif;
-  margin: auto;
-  position: absolute;
   padding-right: 3rem;
   right: 0;
   top: 5%;
@@ -564,7 +562,6 @@ footer {
   overflow: hidden;
   max-height: 500px;
   position: absolute;
-  right: 50%;
   display: flex;
   flex-direction: column;
   gap: 2px;

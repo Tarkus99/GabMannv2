@@ -2,7 +2,7 @@
                 flex-lg-column align-items-lg-center justify-content-lg-between 
                 d-flex flex-column justify-content-center align-items-center
                 mb-0 pt-1 pb-md-0 pb-1 gap-4">
-    <div class="custom-select">
+    <div class="custom-select d-none d-md-block position-absolute">
         <div class=" d-flex gap-2 align-items-center">
             <span class="material-symbols-outlined">
                 translate
@@ -14,7 +14,7 @@
                 </span>
             </button>
         </div>
-        <ul class="languages oculto">
+        <ul class="languages oculto end-50">
             <li><img src="https://cdn-icons-png.flaticon.com/512/323/323329.png" alt=""><span>ENGLISH</span></li>
             <li><img src="https://cdn-icons-png.flaticon.com/512/323/323365.png" alt=""><span>ESPAÑOL</span></li>
             <li><img src="https://cdn-icons-png.flaticon.com/512/197/197560.png" alt="" srcset=""><span>FRANCAIS</span></li>
