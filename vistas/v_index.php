@@ -4,10 +4,10 @@
 <body>
     <div class="container-fluid px-0">
 
-        <?php include '../vistas/vistasParciales/menuLateral.php'?>
+        <?php include '../vistas/vistasParciales/menuLateral.php' ?>
 
         <div class="container-fluid sub-parent">
-            <?php include '../vistas/vistasParciales/header.php'?>
+            <?php include '../vistas/vistasParciales/header.php' ?>
 
             <!--
 ███    ███  █████  ██ ███    ██ 
@@ -112,7 +112,7 @@
             <div id="carouselExampleAutoplaying" class="carousel" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active sellers__cards-container">
-                        <div class="row m-0 px-0  pb-3 gy-4">
+                        <div class="row m-0 px-0 px-sm-5 px-md-0 pb-3 gy-4">
                             <div class="col-12 col-md-6 offset-lg-2 col-lg-4 px-lg-4">
                                 <div class="card h-100 align-items-center product-card">
                                     <img src="../images/hum1.png" class="card-img-top product-img" alt="...">
@@ -202,8 +202,8 @@
             </div>
         </section>
     </div>
-    <?php include '../vistas/vistasParciales/login.php';?>
-    <?php include '../vistas/vistasParciales/footer.html';?>
+    <?php include '../vistas/vistasParciales/login.php'; ?>
+    <?php include '../vistas/vistasParciales/footer.html'; ?>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
     <script src="../vistas/JS/funciones.js"></script>

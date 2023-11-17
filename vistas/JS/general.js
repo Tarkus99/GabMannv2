@@ -42,13 +42,21 @@ changeToRegister.addEventListener('click', (e) => {
 
 modalInputLogin.addEventListener('click', iniciarSesion);
 
-const botonLengua = document.querySelector('#language-picker');
-const listaLenguas = document.querySelector('.languages');
+const botonLengua = document.querySelectorAll('[class*="__language-picker"]');
+const listaLenguas = document.querySelector('.header__languages');
 
-if(botonLengua && listaLenguas){
-botonLengua.addEventListener('click', (e) => {
-    listaLenguas.classList.toggle('oculto');
-})
+if (botonLengua && listaLenguas) {
+    for (const i in botonLengua) {
+        botonLengua[i].addEventListener('click', (e) => {
+            let ul = botonLengua[i].parentElement.parentElement.querySelector('[class*="__languages"]');
+            ul.classList.toggle('oculto');
+            if (ul.classList.contains('header__languages')) {
+                ul.classList.toggle('right')
+            } else {
+                ul.classList.toggle('left')
+            }
+        })
+    }
 
 const lis = listaLenguas.querySelectorAll('li');
 for (const l of lis) {

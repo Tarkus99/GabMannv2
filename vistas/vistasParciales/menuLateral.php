@@ -45,16 +45,16 @@
                 <div class="test"></div>
             </li>
         </ul>
-        <div class="custom-select mt-3 ms-1">
+        <div class="custom-select ms-1 position-relative">
             <div class=" d-flex gap-2 align-items-center">
-                <button id="language-picker">
+                <button class="menu__language-picker">
                     <span>ESP</span>
                     <span class="material-symbols-outlined">
                         expand_more
                     </span>
                 </button>
             </div>
-            <ul class="languages oculto">
+            <ul class="menu__languages oculto start-50 left">
                 <li><img src="https://cdn-icons-png.flaticon.com/512/323/323329.png" alt=""><span>ENGLISH</span></li>
                 <li><img src="https://cdn-icons-png.flaticon.com/512/323/323365.png" alt=""><span>ESPAÑOL</span></li>
                 <li><img src="https://cdn-icons-png.flaticon.com/512/197/197560.png" alt="" srcset=""><span>FRANCAIS</span></li>

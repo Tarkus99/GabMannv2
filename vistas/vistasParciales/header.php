@@ -7,24 +7,23 @@
             <span class="material-symbols-outlined">
                 translate
             </span>
-            <button id="language-picker">
+            <button class="header__language-picker">
                 <span>ESP</span>
                 <span class="material-symbols-outlined">
                     expand_more
                 </span>
             </button>
         </div>
-        <ul class="languages oculto end-50">
+        <ul class="header__languages oculto end-50 right">
             <li><img src="https://cdn-icons-png.flaticon.com/512/323/323329.png" alt=""><span>ENGLISH</span></li>
             <li><img src="https://cdn-icons-png.flaticon.com/512/323/323365.png" alt=""><span>ESPAÑOL</span></li>
             <li><img src="https://cdn-icons-png.flaticon.com/512/197/197560.png" alt="" srcset=""><span>FRANCAIS</span></li>
         </ul>
     </div>
-    <div class="header__img-parent col col-lg-3 col-md-5 col-sm-8 col-10 pl-5 text-center position-relative">
+    <div class="header__img-parent col text-center position-relative">
         <a href="index.php"><img src="../vistas/img/Component 5.png"></a>
     </div>
     <div class="nav-parent col-12 p-0 d-none d-md-flex flex-row justify-content-between align-items-center">
-
         <ul class="m-0 navegacion rounded-start d-flex flex-row align-items-stretch justify-content-center px-1 gap-0">
             <li class="col-6 col-md">
                 <a href="productos.php">Products</a>
@@ -72,5 +71,4 @@
             menu
         </span>
     </button>
-
 </header>
