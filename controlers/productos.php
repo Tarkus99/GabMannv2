@@ -8,7 +8,7 @@ if(isset($_COOKIE['idUnico']))
 else
     $idUnico = 'false';
 
-$url = 'http://localhost/proyecto_servidor_final/servicioProductos/service.php';
+$url = '../servicioProductos/service.php';
 
 $rawProducts = file_get_contents($url);
 $html = lista(json_decode($rawProducts, true), '', '', '');
