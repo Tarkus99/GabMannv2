@@ -3,8 +3,8 @@
 
 <body>
     <div class="container-fluid px-0">
-        <?php include '../vistas/vistasParciales/menuLateral.php'?>
-        <?php include '../vistas/vistasParciales/header.php'?>
+        <?php include '../vistas/vistasParciales/menuLateral.php' ?>
+        <?php include '../vistas/vistasParciales/header.php' ?>
 
         <!--
 ███    ███  █████  ██ ███    ██ 
@@ -76,6 +76,7 @@
                                 add
                             </span>
                         </div>
+                        <input type="hidden" name="nombre" id='hidden-destino' value="">
                         <input type="hidden" name="nombre" id='hidden-nombre' value="<?= $product['nombre'] ?>">
                         <input type="hidden" name="precio" id='hidden-precio' value="<?= $product['precio'] ?>">
                         <input type="hidden" name="idProducto" id='hidden-idProducto' value="<?= $product['idProducto'] ?>">
@@ -104,12 +105,13 @@
             </div>
         </section>
     </div>
-     <?php include '../vistas/vistasParciales/login.php';?>
-     <?php include '../vistas/vistasParciales/footer.html';?>
+    <?php include '../vistas/vistasParciales/login.php'; ?>
+    <?php include '../vistas/vistasParciales/footer.html'; ?>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
     <script src="../vistas/JS/funciones.js"></script>
     <script src="../vistas/JS/general.js"></script>
     <script src='../vistas/JS/detalle.js'></script>
 </body>
+
 </html>
