@@ -20,6 +20,6 @@ goToP90.addEventListener('click', ()=>{
 })
 
 function goToProducts() {
-    location.assign('http://localhost/proyecto_servidor_final/controlers/productos.php');
+    location.assign('http://localhost/GabMannv2/controlers/productos.php');
 }
 

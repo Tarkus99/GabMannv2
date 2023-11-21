@@ -88,7 +88,7 @@
                 </div>
             </div>
         </main>
-        <section>
+        <section class="mb-3">
             <div class="row m-0 media-parent mt-2">
                 <div class="col d-flex flex-column gap-3 justify-content-center align-items-center">
                     <div class="media__title-parent rounded-1 row w-100 justify-content-center">

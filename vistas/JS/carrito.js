@@ -36,7 +36,7 @@ if (esCompra) {
 
   //verifico que si el idProducto ya existe en el carrito
   fetch(
-    `http://localhost/proyecto_servidor_final/servicioCarritos/service.php?idUnico=${idUnico}&idProducto=${idProducto}`
+    `http://localhost/GabMannv2/servicioCarritos/service.php?idUnico=${idUnico}&idProducto=${idProducto}`
   )
     .then(response => response.json())
     .catch(error => console.log(error))
@@ -44,7 +44,7 @@ if (esCompra) {
       //si no existe, success = true y significa que puedo añadirlo con POST
       if (data.success) {
         fetch(
-          `http://localhost/proyecto_servidor_final/servicioCarritos/service.php`,
+          `http://localhost/GabMannv2/servicioCarritos/service.php`,
           optionsPost
         )
           .then(response => {
@@ -55,14 +55,14 @@ if (esCompra) {
             if (data.success) {
               //actualizo el número que hay en el icono del carrito
               sumarCarrito();
-              location.assign('http://localhost/proyecto_servidor_final/controlers/verCarrito.php');
+              location.assign('http://localhost/GabMannv2/controlers/verCarrito.php');
             } else
               alert(data.detalle)
           })
         //si existe, uso un PUT para actualizar la cantidad
       } else {
         fetch(
-          `http://localhost/proyecto_servidor_final/servicioCarritos/service.php`,
+          `http://localhost/GabMannv2/servicioCarritos/service.php`,
           optionsPut
         )
           .then(response => {
@@ -71,7 +71,7 @@ if (esCompra) {
           .catch(error => console.log(error))
           .then(data => {
             if (data.success)
-              location.assign('http://localhost/proyecto_servidor_final/controlers/verCarrito.php');
+              location.assign('http://localhost/GabMannv2/controlers/verCarrito.php');
             else if (!data.success)
               alert(data.detalle)
           })
@@ -86,7 +86,7 @@ if (esCompra) {
 function obtenerTodos() {
   if (idUnico) {
     fetch(
-      `http://localhost/proyecto_servidor_final/servicioCarritos/service.php?idUnico=${idUnico}`
+      `http://localhost/GabMannv2/servicioCarritos/service.php?idUnico=${idUnico}`
     )
       .then(response => response.json())
       .catch(error => console.log(error))
@@ -258,7 +258,7 @@ function eliminar(e) {
       body: JSON.stringify({ idUnico: idUnico, idProducto: idProducto })
     }
     fetch(
-      `http://localhost/proyecto_servidor_final/servicioCarritos/service.php`,
+      `http://localhost/GabMannv2/servicioCarritos/service.php`,
       options
     )
       .then(response => response.json())
@@ -299,7 +299,7 @@ carritoBtnUpdate.addEventListener('click', e => {
   }
 
   fetch(
-    `http://localhost/proyecto_servidor_final/servicioCarritos/service.php`,
+    `http://localhost/GabMannv2/servicioCarritos/service.php`,
     options
   )
     .then(response => response.json())

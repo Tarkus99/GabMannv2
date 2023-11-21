@@ -417,10 +417,10 @@ input[type="number"]:focus {
 .form-detail {
   width: 100%;
   padding: 1% 2%;
+}
 
-  & h2 {
-    font-family: "Agbalumo", sans-serif;
-  }
+.form-detail h2 {
+  font-family: "Agbalumo", sans-serif;
 }
 
 .modal .form-detail .btnDefaultReverse {
