@@ -20,7 +20,7 @@ function iniciarSesion(e) {
 
     if (pass.value && email.value) {
         fetch(
-            `http://localhost/proyecto_servidor_final/servicioClientes/service.php?email=${email.value}&pass=${pass.value}`
+            `http://localhost/GabMannv2/servicioClientes/service.php?email=${email.value}&pass=${pass.value}`
         )
             .then((response) => response.json())
             .then((cliente) => {
@@ -61,7 +61,7 @@ function registrarse(data) {
     options.body = JSON.stringify(data);
 
     fetch(
-        `http://localhost/proyecto_servidor_final/servicioClientes/service.php`,
+        `http://localhost/GabMannv2/servicioClientes/service.php`,
         options
     )
         .then((response) => response.json())
@@ -82,7 +82,7 @@ function updateDniCarrito(form, dni) {
     options.body = JSON.stringify({ idUnico: idUnico, dniCliente: dni });
 
     fetch(
-        `http://localhost/proyecto_servidor_final/servicioCarritos/service.php`,
+        `http://localhost/GabMannv2/servicioCarritos/service.php`,
         options
     )
         .then((response) => response.json())

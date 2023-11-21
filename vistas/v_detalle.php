@@ -23,7 +23,7 @@
                     </p>
                 </div>
             </div>
-            <div class='product-info row m-0 d-flex flex-column flex-md-row mt-0 mt-md-3 px-2 pb-4 pt-md-4 px-2 align-self-center align-items-center justify-content-around'>
+            <div class='product-info row m-0 d-flex flex-column flex-md-row mt-0 mt-md-3 px-2 pt-2 pb-4 pt-md-4 px-2 align-self-center align-items-center justify-content-around'>
                 <div class='col col-12 col-md-6 d-flex justify-content-center align-items-center product-info__img flex-fill'>
                     <img src='<?= $product['foto'] ?>'>
                 </div>

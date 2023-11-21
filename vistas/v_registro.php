@@ -13,7 +13,7 @@
         </div>
 
         <div class="form-parent row w-100 m-0 justify-content-center rounded-1">
-            <form class="form-detail w-75 d-flex flex-column" id="registro__form" action="http://localhost/proyecto_servidor_final/controlers/validar.php" method="post">
+            <form class="form-detail w-75 d-flex flex-column" id="registro__form" action="http://localhost/GabMannv2/controlers/validar.php" method="post">
                 <h2 class="text-center">Sign Up</h2>
 
                 <input type="hidden" name="destino" value="<?= $destino ?>">

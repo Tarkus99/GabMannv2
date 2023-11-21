@@ -40,7 +40,7 @@
             <h2 class="text-center text-3xl my-2">Cart <span class="material-symbols-outlined text-2xl">
                     shopping_basket
                 </span></h2>
-            <form class="form-detail flex flex-col " id="registro__form" action="http://localhost/proyecto_servidorv2/controlers/validar.php" method="post">
+            <form class="form-detail flex flex-col " id="registro__form" action="http://localhost/GabMannv2/controlers/validar.php" method="post">
                 <fieldset id="items-parent" class="flex flex-col gap-3"></fieldset>
             </form>
             <div class="self-end w-fit mt-2 mr-5"><p class="w-fit font-bold">Total: <span id="span-total">0</span>€</p></div>
